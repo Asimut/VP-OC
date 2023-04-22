@@ -64,6 +64,8 @@
 
           function checkRegistration() {
             navigator.serviceWorker.getRegistrations().then(registrations => {
+
+              console.log(registrations);
               
               console.log(registrations[0]);
 
