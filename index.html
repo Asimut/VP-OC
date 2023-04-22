@@ -75,11 +75,7 @@
               if(registrations[0].active){
                 console.log(registrations[0].active.scriptURL);
 
-                if(registrations[0].active.scriptURL != "https://asimut.github.io/VP-OC/oc-sw.js"){
-
-                  setTimeout(checkRegistration, 500);
-
-                } else {
+                if(registrations[0].active.scriptURL == "https://asimut.github.io/VP-OC/oc-sw.js"){
                   console.log('ServiceWorker installed!');
 
                   var Loader = document.getElementById("loader");
